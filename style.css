@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px; 
+  width: 100%;
+}
+
+.titulo {
+  text-align: center;
+  color: #e50914;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.conteudo {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-card, .resumo {
+  flex: 0 0 350px;
+}
+
+.form-card {
+  background: #1b1b1b;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #e50914;
+}
+
+legend {
+  font-size: 1.2rem;
+  color: #e50914;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.campo input[type="text"],
+.campo select {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+}
+
+.opcoes label {
+  display: block;
+  margin: 6px 0;
+  font-weight: 300;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin: 6px 0 10px;
+}
+
+.botao-centro {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background: #e50914;
+  border: none;
+  padding: 12px 25px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #b20710;
+}
+
+/* Resumo */
+.resumo {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  height: fit-content;
+}
+
+.resumo h2 {
+  margin-top: 0;
+  color: #e50914;
+}
+
+.resumo .total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b20710;
+  margin-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-card, .resumo {
+    flex: 1 1 90%; 
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .campo input[type="text"],
+  .campo select {
+    width: 100%;
+  }
+}
+
