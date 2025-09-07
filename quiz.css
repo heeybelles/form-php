@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin-top: 50px;
+    background: linear-gradient(145deg, #e0e0e0, #cbb1f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+fieldset {
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+fieldset:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+fieldset.tema {
+    width: 450px;
+    text-align: center;
+}
+
+fieldset.questao {
+    width: 450px;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 5px solid #772697;
+}
+
+fieldset.resultado {
+    width: 450px;
+    text-align: center;
+    background: linear-gradient(135deg, #d4edda, #a8e6cf);
+    color: #2e7d32;
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 5px solid #2e7d32;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6a1b9a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+select, option {
+    padding: 12px;
+    width: 92%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background: #fafafa;
+    margin-bottom: 18px;
+    transition: border 0.3s, background 0.3s;
+}
+
+select:hover, select:focus {
+    border-color: #772697;
+    background: #fff;
+    outline: none;
+}
+
+label {
+    display: block;
+    padding: 10px 12px;
+    margin: 6px 0;
+    background: #f7f7f7;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+label:hover {
+    background: #e1d4f0;
+    transform: translateX(3px);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #772697, #a64ca6);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    margin-top: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #5a1f80, #8c3fa0);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 500px) {
+    fieldset.tema,
+    fieldset.questao,
+    fieldset.resultado {
+        width: 95%;
+        padding: 20px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    p, label {
+        font-size: 14px;
+    }
+
+    select, option {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
